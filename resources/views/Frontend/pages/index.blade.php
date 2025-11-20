@@ -10,128 +10,38 @@
                 <li data-target="#main-slider" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="item">
-                    <div class="wrap-all" style="
-                        background: url('{{ asset('public/Frontend/images') }}/slider/bg4.jpg') 64.1146% 91.9178%
-                          no-repeat;">
+                @foreach ($sliders as $key => $value)
+                    <div class="item {{ $key == 0 ? 'active' : '' }}"
+                        style="background-image: url('{{ asset($value->image) }}')">
+
                         <div class="container">
                             <div class="row slide-margin">
                                 <div class="col-sm-6">
                                     <div class="carousel-content" style="background: rgba(0, 0, 0, 0.7); padding: 10px">
+
                                         <h1 class="animation animated-item-1">
-                                            Ha-Meem is equipped with 300 Production Lines
+                                            {{ $value->title }}
                                         </h1>
+
                                         <h2 class="animation animated-item-2">
-                                            Approximately 50,000 strong work force are putting their combined
-                                            effort in achieving their target production.
+                                            {{ $value->short_details }}
                                         </h2>
-                                        <a class="btn-slide animation animated-item-3" href="woven.html">Read
-                                            More</a>
+
+                                        @if (!empty($value->btn_link))
+                                            <a class="btn-slide animation animated-item-3" href="{{ $value->btn_link }}">
+                                                {{ $value->btn_name }}
+                                            </a>
+                                        @endif
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-                <!--/.item-->
-                <div class="item active"
-                    style="background-image: url({{ asset('public/Frontend/images') }}/slider/bg2.jpg)">
-                    <div class="container">
-                        <div class="row slide-margin">
-                            <div class="col-sm-6">
-                                <div class="carousel-content" style="background: rgba(0, 0, 0, 0.7); padding: 10px">
-                                    <h1 class="animation animated-item-1">
-                                        State of the art machineries
-                                    </h1>
-                                    <h2 class="animation animated-item-2">
-                                        Ha-Meem is equipped with the state of the art
-                                        machineries to keep in pace with the industry.
-                                    </h2>
-                                    <a class="btn-slide animation animated-item-3" href="woven.html">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.item-->
-                <div class="item" style="background-image: url({{ asset('public/Frontend/images') }}/slider/bg1.jpg)">
-                    <div class="container">
-                        <div class="row slide-margin">
-                            <div class="col-sm-6">
-                                <div class="carousel-content" style="background: rgba(0, 0, 0, 0.7); padding: 10px">
-                                    <h1 class="animation animated-item-1">
-                                        Ha-Meem is vertical in Denim
-                                    </h1>
-                                    <h2 class="animation animated-item-2">
-                                        Installed capacity of over 4 million meters per month.
-                                        Ha-Meem produces yarns from it's own Spinning Mill
-                                        with a capacity of 44 tons per day. It also has piece
-                                        dyeing and yarn dyeing facility.
-                                    </h2>
-                                    <a class="btn-slide animation animated-item-3" href="denim-mill.html">Read
-                                        More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.item-->
-                <div class="item">
-                    <div class="wrap-all" style="
-                        background: url({{ asset('public/Frontend/images') }}/slider/bg5.jpg) no-repeat center
-                          center; ">
-                        <div class="container">
-                            <div class="row slide-margin">
-                                <div class="col-sm-6">
-                                    <div class="carousel-content" style="background: rgba(0, 0, 0, 0.7); padding: 10px">
-                                        <h1 class="animation animated-item-1">
-                                            Our Washing facility is one of the biggest in
-                                            Bangladesh
-                                        </h1>
-                                        <h2 class="animation animated-item-2">
-                                            A premium facility with state of the art laundry
-                                            equipped with the latest Italian machines. We have
-                                            washing capacity of 300,000 pcs/day with all types
-                                            of dye, over dyeing garments and complicated fashion
-                                            washes.
-                                        </h2>
-                                        <a class="btn-slide animation animated-item-3" href="laundry.html">Read
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.item-->
-                <div class="item">
-                    <div class="wrap-all" style="
-                        background: url({{ asset('public/Frontend/images') }}/slider/bg3.jpg) no-repeat center
-                          center;">
-                        <div class="container">
-                            <div class="row slide-margin">
-                                <div class="col-sm-6">
-                                    <div class="carousel-content" style="background: rgba(0, 0, 0, 0.7); padding: 10px">
-                                        <h1 class="animation animated-item-1">
-                                            Ha-Meem's accessories unit is developing in fast
-                                            pace
-                                        </h1>
-                                        <h2 class="animation animated-item-2">
-                                            Manufactures it's own accessories like belt, twill
-                                            tape, elastic, button, zipper, hangar, all kinds of
-                                            paper and woven labels with full care.
-                                        </h2>
-                                        <a class="btn-slide animation animated-item-3"
-                                            href="embroidery-accessories.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.item-->
+                @endforeach
             </div>
+
             <!--/.carousel-inner-->
         </div>
         <!--/.carousel-->
@@ -149,11 +59,11 @@
                 <h1 style="color: #4e4e4e">Welcome to Ha-Meem Group</h1>
             </div>
             <div class="wow fadeInDown animated" style="
-                    padding-top: 20px;
-                    text-align: justify;
-                    visibility: visible;
-                    animation-name: fadeInDown;
-                  ">
+                        padding-top: 20px;
+                        text-align: justify;
+                        visibility: visible;
+                        animation-name: fadeInDown;
+                      ">
                 <p class="lead">
                     Ha-Meem Group, a Bangladeshi clothing manufacturer, is leading supplier of readymade
                     garments and denim fabric in the world. We are one of the top clothing companies in
@@ -441,11 +351,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="
-                        visibility: hidden;
-                        animation-duration: 1000ms;
-                        animation-delay: 600ms;
-                        animation-name: none;
-                      ">
+                            visibility: hidden;
+                            animation-duration: 1000ms;
+                            animation-delay: 600ms;
+                            animation-name: none;
+                          ">
                         <div class="media-body text-center">
                             <h2>Achivements</h2>
                             <span class="glyphicon glyphicon-certificate"></span>&nbsp;Annual Winner of
