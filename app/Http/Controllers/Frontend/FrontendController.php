@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Industry;
 use App\Models\Service;
 use App\Models\Slider;
 use Illuminate\Http\Request;
@@ -13,6 +14,7 @@ class FrontendController extends Controller
     {
         $sliders = Slider::where('status',1)->get();
         $services = Service::where('status',1)->get();
-        return view('Frontend.pages.index',compact('sliders','services'));
+        $industries = Industry::where('status',1)->get();
+        return view('Frontend.pages.index',compact('sliders','services','industries'));
     }
 }

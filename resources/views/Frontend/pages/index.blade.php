@@ -59,11 +59,11 @@
                 <h1 style="color: #4e4e4e">Welcome to Heaven Soul Group</h1>
             </div>
             <div class="wow fadeInDown animated" style="
-                                        padding-top: 20px;
-                                        text-align: justify;
-                                        visibility: visible;
-                                        animation-name: fadeInDown;
-                                      ">
+                                            padding-top: 20px;
+                                            text-align: justify;
+                                            visibility: visible;
+                                            animation-name: fadeInDown;
+                                          ">
                 <p class="lead">
                     Heaven Soul Fashion, a Bangladeshi clothing manufacturer, is leading supplier of readymade
                     garments and denim fabric in Bangladesh.The company produces some of the most fashionable
@@ -121,7 +121,11 @@
                                     @endif
                                     @if ($value->youtube_link)
                                         <li>
-                                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/{{ $value->youtube_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            <iframe width="100%" height="215"
+                                                src="https://www.youtube.com/embed/{{ $value->youtube_link }}"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                         </li>
                                     @endif
                                     <li class="plan-action">
@@ -147,152 +151,24 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="{{ asset('public/Frontend/images') }}/services/woven-icon.png"
-                                width="80" height="80" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="woven.html">Woven</a>
-                            </h3>
-                            <p>
-                                Our woven factories are equipped with 300 production lines in six different
-                                location.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="{{ asset('public/Frontend/images') }}/services/denim-icon.png"
-                                width="80" height="80" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="denim-mill.html">Denim Mill</a>
-                            </h3>
-                            <p>
-                                A dream project of Ha‐Meem group located in a serene surrounding of 100 acres.
-                            </p>
+                @foreach ($industries as $value)
+                    <div class="col-sm-6 col-md-4">
+                        <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
+                            <div class="pull-left">
+                                <img class="img-responsive" src="{{ asset('public/Frontend/images') }}/services/woven-icon.png"
+                                    width="80" height="80" />
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">
+                                    <a>{{ $value->title }}</a>
+                                </h3>
+                                <p>
+                                    {{ $value->short_details }}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/wash-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="laundry.html">Laundry</a>
-                            </h3>
-                            <p>
-                                All the washing plants have dry process capability with required equipment.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/sweater-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="sweater.html">Sweater</a>
-                            </h3>
-                            <p>
-                                Two Sweater Units consisting of 400 Jacquard Stall (German) machines.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/jute-mill-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading"><a href="#">Jute Mill</a></h3>
-                            <p>
-                                M.H. Jute Mills Ltd., one of the growing industry of Heaven Soul Group.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/design-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="design.html">Design</a>
-                            </h3>
-                            <p>
-                                Ha‐Meem has a resourceful design team lead by experienced designers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/newspaper-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="http://www.samakal.net/" target="_blank">Newspaper</a>
-                            </h3>
-                            <p>
-                                Samakal, a popular &amp; widely circulated national daily
-                                newspaper in Bangladesh.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/channel-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="http://www.channel24bd.tv/" target="_blank">News Channel</a>
-                            </h3>
-                            <p>
-                                Channel-24, a very popular news channel covering news all
-                                over Bangladesh.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown" style="visibility: hidden; animation-name: none">
-                        <div class="pull-left">
-                            <img class="img-responsive"
-                                src="{{ asset('public/Frontend/images') }}/services/ancillary-icon.png" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">
-                                <a href="ancillary.html">Ancillary</a>
-                            </h3>
-                            <p>
-                                Embroidery Factory, Printing Factory, Carton Factory, Poly Bag Industry, Label
-                                Factory.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <!--/.row-->
         </div>
@@ -303,11 +179,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="
-                                            visibility: hidden;
-                                            animation-duration: 1000ms;
-                                            animation-delay: 600ms;
-                                            animation-name: none;
-                                          ">
+                                                visibility: hidden;
+                                                animation-duration: 1000ms;
+                                                animation-delay: 600ms;
+                                                animation-name: none;
+                                              ">
                         <div class="media-body text-center">
                             <h2>Achivements</h2>
                             <span class="glyphicon glyphicon-certificate"></span>&nbsp;Annual Winner of
