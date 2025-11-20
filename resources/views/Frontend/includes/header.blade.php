@@ -16,27 +16,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="About.html">About Us</a></li>
-                    <li><a href="merchandising.html">Merchandising</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Industries <i
-                                class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="woven.html">Woven</a></li>
-                            <li><a href="sweater.html">Sweater</a></li>
-                            <li><a href="laundry.html">Laundry</a></li>
-                            <li><a href="denim-mill.html">Denim Mill</a></li>
-                            <li>
-                                <a href="embroidery-accessories.html">Accessories Unit</a>
-                            </li>
-                            <li><a href="design.html">Design &amp; Sample</a></li>
-                            <li><a href="ancillary.html">Ancillary</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="our-buyers.html">Our Customers</a></li>
-                    <li class="active"><a href="carrier.html">Career</a></li>
-
                     <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="./pdf/my-pdf.pdf" target="_blank">News</a></li>
                 </ul>
             </div>
         </div>
