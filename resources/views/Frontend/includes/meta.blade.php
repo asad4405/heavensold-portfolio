@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" />
     <meta name="author" />
-    <title>Ha-Meem Group | Top Ranking Bangladeshi Clothing Manufacturer</title>
+    <title>Heaven Soul Group | Top Ranking Bangladeshi Clothing Manufacturer</title>
     <!-- core CSS -->
     <link href="{{ asset('public/Frontend/css') }}/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ asset('public/Frontend/css') }}/font-awesome.min.css" rel="stylesheet" />
@@ -23,9 +23,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Ha-Meem Group, a Bangladeshi clothing manufacturer is world leader of readymade garments and denim fabric. It is one of the top clothing companies in Bangladesh." />
+        content="Heaven Soul Group, a Bangladeshi clothing manufacturer is world leader of readymade garments and denim fabric. It is one of the top clothing companies in Bangladesh." />
     <meta name="keywords" content="bangladeshi clothing manufacturer, top clothing companies in bangladesh" />
-    <meta name="author" content="Ha-Meem Group" />
+    <meta name="author" content="Heaven Soul Group" />
     <meta name="robots" content="index,follow" />
     <meta name="copyright" content="http://www.hameemgroup.net/" />
     <meta name="distribution" content="Global" />

@@ -11,7 +11,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="widget">
                     <h3>About Us</h3>
-                    Ha-Meem Group is a leading supplier of readymade garments and
+                    Heaven Soul Group is a leading supplier of readymade garments and
                     denim fabric in the world. The company produces some of the
                     most fashionable denim fabrics and garment products.
                 </div>
@@ -34,7 +34,7 @@
                 <div class="widget">
                     <h3>Head Office</h3>
                     <address>
-                        <strong>Ha-Meem Group</strong><br />
+                        <strong>Heaven Soul Group</strong><br />
                         387 (South), Tejgaon Industrial Area<br />
                         Dhaka-1208, Bangladesh<br />
                         <div style="font-size: 12px">
@@ -53,8 +53,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                © 2018
-                <a target="_blank" href="http://www.hameemgroup.net/" title="Ha-Meem Group">Ha-Meem
+                © 2025
+                <a target="_blank" href="http://www.hameemgroup.net/" title="Heaven Soul Group">Heaven Soul
                     Group</a>. All Rights Reserved.
             </div>
             <div class="col-sm-6">

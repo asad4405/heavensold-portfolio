@@ -56,22 +56,22 @@
     <section id="feature">
         <div class="container">
             <div class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown">
-                <h1 style="color: #4e4e4e">Welcome to Ha-Meem Group</h1>
+                <h1 style="color: #4e4e4e">Welcome to Heaven Soul Group</h1>
             </div>
             <div class="wow fadeInDown animated" style="
-                        padding-top: 20px;
-                        text-align: justify;
-                        visibility: visible;
-                        animation-name: fadeInDown;
-                      ">
+                                        padding-top: 20px;
+                                        text-align: justify;
+                                        visibility: visible;
+                                        animation-name: fadeInDown;
+                                      ">
                 <p class="lead">
-                    Ha-Meem Group, a Bangladeshi clothing manufacturer, is leading supplier of readymade
+                    Heaven Soul Group, a Bangladeshi clothing manufacturer, is leading supplier of readymade
                     garments and denim fabric in the world. We are one of the top clothing companies in
                     Bangladesh. The company produces some of the most fashionable denim fabrics and garment
                     products and owns one of the most comprehensive and resourceful manufacturing facilities in
                     Bangladesh.
                     <br />
-                    <br /> Ha-Meem Group has earned name and fame both at home and abroad as one of the top
+                    <br /> Heaven Soul Group has earned name and fame both at home and abroad as one of the top
                     clothing companies in Bangladesh. The continuous growth of this group is moving forward hand
                     on hand with the industrialization of the
                     home country Bangladesh. Moreover we as a Bangladeshi clothing manufacturer have been
@@ -83,7 +83,7 @@
                     reputed Bangladeshi clothing manufacturer.
                     <br />
                     <br /> Company produces 7 million pcs of woven garments per month with the assortment of
-                    infant to adult in men and women. Today Ha-Meem Group employs around 50,000 workers and the
+                    infant to adult in men and women. Today Heaven Soul Group employs around 50,000 workers and the
                     company is equipped with 26 garments factories,
                     a unique Denim mill, Sweater factory, Embroidery and Printing factory, Carton factory, Poly
                     bag industry, Label factory, Jute mill, Chemical formulation plant, Tea Gardens, Transport
@@ -91,7 +91,7 @@
                     Newspaper. Own C &amp; F office in every Bangladeshi port gives privilege of quick clearing
                     and forwarding support.
                     <br />
-                    <br /> Ha-Meem Knit will start within a year. It will have capacity of 10 tons composite
+                    <br /> Heaven Soul Knit will start within a year. It will have capacity of 10 tons composite
                     knit which will be increased to 50 tons in phases. It will make all types of knit products
                     like tops &amp; bottoms for man, women and
                     children.
@@ -99,87 +99,57 @@
             </div>
             <hr />
             <div class="row wow fadeInDown" style="visibility: hidden; animation-name: none">
-                <div class="col-md-4">
-                    <div class="pricing-area text-center">
-                        <div class="plan price-four wow fadeInDown" style="visibility: hidden; animation-name: none">
-                            <ul>
-                                <li class="heading-four">
-                                    <h1>Our Strength</h1>
-                                </li>
-                                <li>
-                                    550 MILLION USD TURNOVER
-                                    <br /> (woven+denim+sweater)
-                                </li>
-                                <li>7 MILLION PCS/MONTH PRODUCTION</li>
-                                <li>7 WASHING PLANTS</li>
-                                <li>300 PRODUCTION LINES</li>
-                                <li>LABEL / EMBROIDERY FACILITY</li>
-                                <li>PACKAGING INDUSTRY</li>
-                                <li>TRANSPORT FACILITIES</li>
-                                <li>PRINTING OF GARMENTS &amp; PAPERS</li>
-                                <li>TEA GARDEN</li>
-                                <li class="plan-action">
-                                    <a href="#" class="btn btn-primary">&nbsp;</a>
-                                </li>
-                            </ul>
+                @foreach ($services as $value)
+                    <div class="col-md-4">
+                        <div class="pricing-area text-center">
+                            <div class="plan price-four wow fadeInDown" style="visibility: hidden; animation-name: none">
+                                <ul>
+                                    <li class="heading-four">
+                                        <h1>{{ $value->title }}</h1>
+                                    </li>
+                                    @if ($value->name_one)
+                                        <li>{{ $value->name_one }}</li>
+                                    @endif
+                                    @if ($value->name_two)
+                                        <li>{{ $value->name_two }}</li>
+                                    @endif
+                                    @if ($value->name_three)
+                                        <li>{{ $value->name_three }}</li>
+                                    @endif
+                                    @if ($value->name_four)
+                                        <li>{{ $value->name_four }}</li>
+                                    @endif
+                                    @if ($value->name_five)
+                                        <li>{{ $value->name_five }}</li>
+                                    @endif
+                                    @if ($value->name_six)
+                                        <li>{{ $value->name_six }}</li>
+                                    @endif
+                                    @if ($value->name_seven)
+                                        <li>{{ $value->name_seven }}</li>
+                                    @endif
+                                    @if ($value->name_eight)
+                                        <li>{{ $value->name_eight }}</li>
+                                    @endif
+                                    @if ($value->name_nine)
+                                        <li>{{ $value->name_nine }}</li>
+                                    @endif
+                                    @if ($value->name_ten)
+                                        <li>{{ $value->name_ten }}</li>
+                                    @endif
+                                    @if ($value->youtube_link)
+                                        <li>
+                                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/{{ $value->youtube_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        </li>
+                                    @endif
+                                    <li class="plan-action">
+                                        <a href="#" class="btn btn-primary">&nbsp;</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-area text-center">
-                        <div class="plan price-four wow fadeInDown" style="visibility: hidden; animation-name: none">
-                            <ul>
-                                <li class="heading-four">
-                                    <h1>Major Products</h1>
-                                </li>
-                                <li>
-                                    ALL TYPES OF BOTTOMS AND TOPS
-                                    <br /> (Hi-Fashion with critical washes)
-                                </li>
-                                <li>CRITICAL CARGOS</li>
-                                <li>HI-FASHION DENIM JEANS</li>
-                                <li>BASIC AND HIFASHION WASHES</li>
-                                <li>WRINKLE FREE</li>
-                                <li>OVER DYEING OF GARMENTS</li>
-                                <li>LASER FINISH / 3D WHISKER</li>
-                                <li>MENS SHIRTS</li>
-                                <li>DRESS PANTS</li>
-                                <li>OUTWEAR / JACKETS FACILITY</li>
-                                <li class="plan-action">
-                                    <a href="#" class="btn btn-primary">&nbsp;</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pricing-area text-center">
-                        <div class="plan price-four wow fadeInDown" style="visibility: hidden; animation-name: none">
-                            <ul>
-                                <li class="heading-four">
-                                    <h1>Ha-Meem at a glance</h1>
-                                </li>
-                                <li>
-                                    <video id="example_video_1" controls="" preload="auto" poster="img/video-preview.jpg"
-                                        data-setup='{"example_option":true}' width="" height="200">
-                                        <source src="video/Ha-Meem-Video-Presentation.mp4" type="video/mp4" />
-                                        <source src="video/Ha-Meem-Video-Presentation.webm" type="video/webm" />
-                                        <source src="video/Ha-Meem-Video-Presentation.ogv" type="video/ogg" />
-                                        <p class="vjs-no-js">
-                                            To view this video please enable JavaScript, and
-                                            consider upgrading to a web browser that
-                                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports
-                                                HTML5 video</a>
-                                        </p>
-                                    </video>
-                                </li>
-                                <li class="plan-action">
-                                    <a href="#" class="btn btn-primary">&nbsp;</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <!--/.container-->
@@ -190,7 +160,7 @@
             <div class="center wow fadeInDown" style="visibility: hidden; animation-name: none">
                 <h2>Our Industries</h2>
                 <p class="lead">
-                    Ha-Meem Group has ventured into many industries in Bangladesh after it's inception.
+                    Heaven Soul Group has ventured into many industries in Bangladesh after it's inception.
                     <br /> It has become one of the fastest growing Group of Company in the country.
                 </p>
             </div>
@@ -269,7 +239,7 @@
                         <div class="media-body">
                             <h3 class="media-heading"><a href="#">Jute Mill</a></h3>
                             <p>
-                                M.H. Jute Mills Ltd., one of the growing industry of Ha-Meem Group.
+                                M.H. Jute Mills Ltd., one of the growing industry of Heaven Soul Group.
                             </p>
                         </div>
                     </div>
@@ -351,11 +321,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" style="
-                            visibility: hidden;
-                            animation-duration: 1000ms;
-                            animation-delay: 600ms;
-                            animation-name: none;
-                          ">
+                                            visibility: hidden;
+                                            animation-duration: 1000ms;
+                                            animation-delay: 600ms;
+                                            animation-name: none;
+                                          ">
                         <div class="media-body text-center">
                             <h2>Achivements</h2>
                             <span class="glyphicon glyphicon-certificate"></span>&nbsp;Annual Winner of
