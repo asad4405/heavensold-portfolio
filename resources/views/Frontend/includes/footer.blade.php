@@ -59,9 +59,9 @@
             </div>
             <div class="col-sm-6">
                 <ul class="pull-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </ul>
             </div>
         </div>

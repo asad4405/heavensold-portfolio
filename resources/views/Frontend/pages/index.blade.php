@@ -65,36 +65,18 @@
                                         animation-name: fadeInDown;
                                       ">
                 <p class="lead">
-                    Heaven Soul Group, a Bangladeshi clothing manufacturer, is leading supplier of readymade
-                    garments and denim fabric in the world. We are one of the top clothing companies in
-                    Bangladesh. The company produces some of the most fashionable denim fabrics and garment
-                    products and owns one of the most comprehensive and resourceful manufacturing facilities in
-                    Bangladesh.
-                    <br />
-                    <br /> Heaven Soul Group has earned name and fame both at home and abroad as one of the top
-                    clothing companies in Bangladesh. The continuous growth of this group is moving forward hand
-                    on hand with the industrialization of the
-                    home country Bangladesh. Moreover we as a Bangladeshi clothing manufacturer have been
-                    contributing immensely in the financial growth of the nation.
-                    <br />
-                    <br /> Ha‐Meem Group, one of the top clothing companies in Bangladesh exporting to USA and
-                    Europe for a long time. Because of our successful history with the world leading customers
-                    and buyers, we are the most valued and well
-                    reputed Bangladeshi clothing manufacturer.
-                    <br />
-                    <br /> Company produces 7 million pcs of woven garments per month with the assortment of
-                    infant to adult in men and women. Today Heaven Soul Group employs around 50,000 workers and the
-                    company is equipped with 26 garments factories,
-                    a unique Denim mill, Sweater factory, Embroidery and Printing factory, Carton factory, Poly
-                    bag industry, Label factory, Jute mill, Chemical formulation plant, Tea Gardens, Transport
-                    company, News Channel and a national daily
-                    Newspaper. Own C &amp; F office in every Bangladeshi port gives privilege of quick clearing
-                    and forwarding support.
-                    <br />
-                    <br /> Heaven Soul Knit will start within a year. It will have capacity of 10 tons composite
-                    knit which will be increased to 50 tons in phases. It will make all types of knit products
-                    like tops &amp; bottoms for man, women and
-                    children.
+                    Heaven Soul Fashion, a Bangladeshi clothing manufacturer, is leading supplier of readymade
+                    garments and denim fabric in Bangladesh.The company produces some of the most fashionable
+                    denim fabrics and garment products and owns one of the most comprehensive and resourceful
+                    manufacturing facilities in Bangladesh.
+
+                    <br>
+                    Heaven Soul Fashion has earned name and fame both at home and abroad as one of the top
+                    clothing companies in Bangladesh. The continuous growth of this company is moving forward
+                    hand on hand with the industrialization of the home country Bangladesh. Moreover we as a
+                    Bangladeshi clothing manufacturer have been contributing immensely in the financial growth of
+                    the nation.
+
                 </p>
             </div>
             <hr />

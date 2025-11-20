@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\BackendController;
+use App\Http\Controllers\Backend\IndustryController;
 use App\Http\Controllers\Backend\ServiceController;
 use App\Http\Controllers\Backend\SliderController;
 use Illuminate\Support\Facades\Route;
@@ -12,5 +13,7 @@ Route::group(['middleware' => ['auth'],'prefix' => '/admin'], function () {
     Route::resource('slider', SliderController::class, ['names' => 'admin.slider']);
     // Services
     Route::resource('service', ServiceController::class, ['names' => 'admin.service']);
+    // industry
+    Route::resource('industry', IndustryController::class, ['names' => 'admin.industry']);
 
 });
