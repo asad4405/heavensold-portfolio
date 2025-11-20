@@ -9,7 +9,6 @@ class BackendController extends Controller
 {
     public function dashboard()
     {
-        return view('Backend.layouts.master');
-        // return view('dashboard');
+        return view('dashboard');
     }
 }
