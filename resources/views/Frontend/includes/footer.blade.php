@@ -11,9 +11,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="widget">
                     <h3>About Us</h3>
-                    Heaven Soul Group is a leading supplier of readymade garments and
-                    denim fabric in the world. The company produces some of the
-                    most fashionable denim fabrics and garment products.
+                    {{$setting->footer_text}}
                 </div>
             </div>
             <!--/.col-md-3-->
@@ -22,9 +20,9 @@
                 <div class="widget">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="csr.html">CSR</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="our-buyers.html">Our Customers</a></li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,14 +32,13 @@
                 <div class="widget">
                     <h3>Head Office</h3>
                     <address>
-                        <strong>Heaven Soul Group</strong><br />
-                        387 (South), Tejgaon Industrial Area<br />
-                        Dhaka-1208, Bangladesh<br />
+                        <strong>{{ $setting->name }}</strong><br />
+                        {{$setting->address}}<br />
                         <div style="font-size: 12px">
-                            <span class="glyphicon glyphicon-phone-alt"></span>&nbsp;+880-2-8170592,
-                            +880-2-8170593
+                            <span class="glyphicon glyphicon-phone-alt"></span>&nbsp;{{ $setting->phone_one }},
+                            {{ $setting->phone_two }}
                             <br />
-                            <span class="glyphicon glyphicon-print"></span>&nbsp;+880-2-8170583
+                            <span class="glyphicon glyphicon-print"></span>&nbsp;{{ $setting->phone_three }}
                         </div>
                     </address>
                 </div>
@@ -53,9 +50,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                © 2025
-                <a target="_blank" href="http://www.hameemgroup.net/" title="Heaven Soul Group">Heaven Soul
-                    Group</a>. All Rights Reserved.
+                © {{ date('Y') }}
+                {{$setting->name}}. All Rights Reserved | Developed by <a target="_blank" href="http://danpite.tech"> Danpite Tech</a>
             </div>
             <div class="col-sm-6">
                 <ul class="pull-right">

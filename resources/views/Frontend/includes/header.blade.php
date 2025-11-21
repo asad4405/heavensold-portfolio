@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand cus-logo" href="{{ url('/') }}">
-                    <img src="{{ asset('public/Frontend/images') }}/logo.png" alt="logo" />
+                    <img src="{{ asset($setting->logo) }}" alt="logo" width="150" />
                 </a>
             </div>
             <div class="collapse navbar-collapse navbar-right customSize">

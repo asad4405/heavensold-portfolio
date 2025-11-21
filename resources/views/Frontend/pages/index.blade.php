@@ -56,28 +56,10 @@
     <section id="feature">
         <div class="container">
             <div class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown">
-                <h1 style="color: #4e4e4e">Welcome to Heaven Soul Group</h1>
+                <h1 style="color: #4e4e4e">Welcome to {{ $setting->name }}</h1>
             </div>
-            <div class="wow fadeInDown animated" style="
-                                            padding-top: 20px;
-                                            text-align: justify;
-                                            visibility: visible;
-                                            animation-name: fadeInDown;
-                                          ">
-                <p class="lead">
-                    Heaven Soul Fashion, a Bangladeshi clothing manufacturer, is leading supplier of readymade
-                    garments and denim fabric in Bangladesh.The company produces some of the most fashionable
-                    denim fabrics and garment products and owns one of the most comprehensive and resourceful
-                    manufacturing facilities in Bangladesh.
-
-                    <br>
-                    Heaven Soul Fashion has earned name and fame both at home and abroad as one of the top
-                    clothing companies in Bangladesh. The continuous growth of this company is moving forward
-                    hand on hand with the industrialization of the home country Bangladesh. Moreover we as a
-                    Bangladeshi clothing manufacturer have been contributing immensely in the financial growth of
-                    the nation.
-
-                </p>
+            <div class="wow fadeInDown animated" style="padding-top: 20px; text-align: justify; visibility: visible; animation-name: fadeInDown;">
+                <p class="lead">{!! $setting->about_details !!}</p>
             </div>
             <hr />
             <div class="row wow fadeInDown" style="visibility: hidden; animation-name: none">
