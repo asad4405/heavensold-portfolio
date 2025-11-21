@@ -21,8 +21,8 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
+                        <li><a href="{{ route('contact') }}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,8 +56,8 @@
             <div class="col-sm-6">
                 <ul class="pull-right">
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="{{ route('about') }}">About Us</a></li>
+                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
                 </ul>
             </div>
         </div>

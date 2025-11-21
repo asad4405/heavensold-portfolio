@@ -5,6 +5,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[FrontendController::class,'index'])->name('index');
+Route::get('/about-us',[FrontendController::class,'about'])->name('about');
+Route::get('/contact-us',[FrontendController::class,'contact'])->name('contact');
 
 
 

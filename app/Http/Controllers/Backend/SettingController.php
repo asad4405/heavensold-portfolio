@@ -61,6 +61,7 @@ class SettingController extends Controller
         $setting->phone_one         = $request->phone_one;
         $setting->phone_two         = $request->phone_two;
         $setting->phone_three       = $request->phone_three;
+        $setting->map               = $request->map;
         $setting->about_details     = $request->about_details;
         $setting->meta_title        = $request->meta_title;
         $setting->meta_keywords     = $request->meta_keywords;

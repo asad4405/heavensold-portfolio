@@ -166,7 +166,7 @@
                                                 animation-delay: 600ms;
                                                 animation-name: none;
                                               ">
-                        <div class="media-body text-center">
+                        {{-- <div class="media-body text-center">
                             <h2>Achivements</h2>
                             <span class="glyphicon glyphicon-certificate"></span>&nbsp;Annual Winner of
                             Strategic Quality Assurance Dept.
@@ -181,7 +181,7 @@
                             <br />
                             <span class="glyphicon glyphicon-certificate"></span>&nbsp;Technical Performance
                             Award. JCPenny. 2009.
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

@@ -15,8 +15,8 @@
             <div class="collapse navbar-collapse navbar-right customSize">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="{{ route('about') }}">About Us</a></li>
+                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
                 </ul>
             </div>
         </div>

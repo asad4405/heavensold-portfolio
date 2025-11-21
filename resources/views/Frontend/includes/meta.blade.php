@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" />
     <meta name="author" />
-    <title>Heaven Soul Group | Top Ranking Bangladeshi Clothing Manufacturer</title>
+    <title>{{ $setting->name }} | Top Ranking Bangladeshi Clothing Manufacturer</title>
     <!-- core CSS -->
     <link href="{{ asset('public/Frontend/css') }}/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ asset('public/Frontend/css') }}/font-awesome.min.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     <link href="{{ asset('public/Frontend/css') }}/prettyPhoto.css" rel="stylesheet" />
     <link href="{{ asset('public/Frontend/css') }}/main.css" rel="stylesheet" />
     <link href="{{ asset('public/Frontend/css') }}/responsive.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="{{ asset('public/Frontend/images') }}/ico/favicon.ico" />
+    <link rel="shortcut icon" href="{{ asset($setting->favicon) }}" />
     <style>
         .customSize {
             font-size: 13px;
@@ -22,18 +22,18 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Heaven Soul Group, a Bangladeshi clothing manufacturer is world leader of readymade garments and denim fabric. It is one of the top clothing companies in Bangladesh." />
-    <meta name="keywords" content="bangladeshi clothing manufacturer, top clothing companies in bangladesh" />
-    <meta name="author" content="Heaven Soul Group" />
-    <meta name="robots" content="index,follow" />
-    <meta name="copyright" content="http://www.hameemgroup.net/" />
-    <meta name="distribution" content="Global" />
-    <meta name="rating" content="Safe For Kids" />
-    <meta name="geo.region" content="BD-13" />
-    <meta name="geo.placename" content="Dhaka" />
-    <meta name="geo.position" content="23.759894;90.39669" />
-    <meta name="ICBM" content="23.759894, 90.39669" />
+    <meta name="description" content="{{ $setting->meta_description ?? '' }}">
+    <meta name="keywords" content="{{ $setting->meta_keywords ?? '' }}">
+    <meta name="author" content="{{ $setting->name ?? '' }}">
+    <meta property="og:image" content="{{ asset($setting->meta_metaimage ?? '') }}">
+    <meta name="twitter:image" content="{{ asset($setting->meta_metaimage ?? '') }}">
+    <meta property="og:title" content="{{ $setting->meta_title ?? '' }}">
+    <meta property="og:description" content="{{ $setting->meta_description ?? '' }}">
+    <meta property="og:url" content="{{ env('APP_URL') }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="{{ asset($setting->meta_metaimage ?? '') }}">
+    <meta name="twitter:title" content="{{ $setting->meta_title ?? '' }}">
+    <meta name="twitter:description" content="{{ $setting->meta_description ?? '' }}">
     <style type="text/css">
         .wrap-all {
             width: 100%;

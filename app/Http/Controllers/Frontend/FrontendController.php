@@ -17,4 +17,14 @@ class FrontendController extends Controller
         $industries = Industry::where('status',1)->get();
         return view('Frontend.pages.index',compact('sliders','services','industries'));
     }
+
+    public function about()
+    {
+        return view('Frontend.pages.about');
+    }
+
+    public function contact()
+    {
+        return view('Frontend.pages.contact');
+    }
 }
