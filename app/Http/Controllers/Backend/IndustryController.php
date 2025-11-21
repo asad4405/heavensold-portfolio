@@ -86,7 +86,7 @@ class IndustryController extends Controller
 
             $industry->image   = $imagePath . $imageName;
         }
-        $industry->save();
+        $industry->update();
         return redirect()->route('admin.industry.index')->with('success','Industry Updated!');
     }
 
